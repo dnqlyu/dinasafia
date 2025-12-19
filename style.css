@@ -1,0 +1,224 @@
+/* ===== GLOBAL RESET ===== */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f2ee;
+  color: #2e2e2e;
+  line-height: 1.7;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #8b1e2d;
+  color: #ffffff;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+header p {
+  opacity: 0.85;
+}
+
+/* ===== NAVIGATION ===== */
+.w3-bar {
+  background-color: #2b2b2b !important;
+  letter-spacing: 2px;
+}
+
+.w3-bar a {
+  color: #ffffff;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+.section {
+  background-color: #ffffff;
+  padding: 60px;
+  margin: 60px auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+/* ===== FLOATING DECOR ===== */
+.decor {
+  position: absolute;
+  width: 120px;
+  opacity: 0.9;
+}
+
+.decor.top-right {
+  top: -40px;
+  right: -40px;
+}
+
+.decor.bottom-left {
+  bottom: -40px;
+  left: -40px;
+}
+
+/* ===== IMAGES ===== */
+img {
+  max-width: 100%;
+  transition: transform 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== IMAGE HEADERS ===== */
+.header-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 90px 20px;
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+  font-size: 13px;
+  letter-spacing: 1px;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+/* ===== PROFILE PICTURE ===== */
+.profile-frame {
+  width: 160px;              /* shrink size */
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #e6d9f2; /* soft chic frame */
+  margin: 0 auto;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== IMAGE FRAME (GENERAL) ===== */
+.image-frame {
+  width: 100%;
+  aspect-ratio: 1 / 1;       /* forces square */
+  overflow: hidden;
+  border-radius: 12px;
+  border: 3px solid #f0eaf6;
+  margin-bottom: 10px;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== FEATURED MUSIC ===== */
+#featured-music {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.music-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.music-track {
+  background: #f7f4fa;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* ===== FAVORITES WITH IMAGES ===== */
+.fav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  text-align: center;
+}
+
+/* Center cards that contain profile picture */
+.w3-card.w3-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* PROFILE PICTURE FIX */
+.profile-frame {
+  width: 140px;              /* smaller */
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #e6d9f2;
+  margin: 0 auto;            /* FORCE CENTER */
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* IMAGE FRAME FOR ALL OTHER IMAGES */
+.image-frame {
+  width: 100%;
+  height: 200px;             /* SAME HEIGHT EVERYWHERE */
+  overflow: hidden;
+  border-radius: 14px;
+  border: 3px solid #f0eaf6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* GRID FIX FOR CHARACTER / FAMILY / GALLERY */
+.w3-row-padding {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.w3-third, .w3-quarter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Caption text alignment */
+.w3-third p,
+.w3-quarter p {
+  text-align: center;
+}
